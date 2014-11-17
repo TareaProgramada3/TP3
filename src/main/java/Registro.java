@@ -9,6 +9,8 @@ import javax.inject.Named;
 @RequestScoped
 public class Registro {
 
+    String edad;
+    String direccion;
     String año;
     String telefono;
     String nombre;
@@ -18,6 +20,31 @@ public class Registro {
     String contraseña1;
     String contraseña2;
     String contraseña3;
+    String imagen;
+
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
+    }
+        
+    public String getEdad() {
+        return edad;
+    }
+
+    public void setEdad(String edad) {
+        this.edad = edad;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
 
     public String getAño() {
         return año;
@@ -35,10 +62,6 @@ public class Registro {
         this.telefono = telefono;
     }
 
-    public String getCorreo2() {
-        return correo2;
-    }
-
     public String getNombre() {
         return nombre;
     }
@@ -54,9 +77,29 @@ public class Registro {
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
-    
+
+    public String getCorreo1() {
+        return correo1;
+    }
+
+    public void setCorreo1(String correo1) {
+        this.correo1 = correo1;
+    }
+
+    public String getCorreo2() {
+        return correo2;
+    }
+
     public void setCorreo2(String correo2) {
         this.correo2 = correo2;
+    }
+
+    public String getContraseña1() {
+        return contraseña1;
+    }
+
+    public void setContraseña1(String contraseña1) {
+        this.contraseña1 = contraseña1;
     }
 
     public String getContraseña2() {
@@ -74,23 +117,7 @@ public class Registro {
     public void setContraseña3(String contraseña3) {
         this.contraseña3 = contraseña3;
     }
-    
-    public String getCorreo1() {
-        return correo1;
-    }
 
-    public void setCorreo1(String correo1) {
-        this.correo1 = correo1;
-    }
-
-    public String getContraseña1() {
-        return contraseña1;
-    }
-
-    public void setContraseña1(String contraseña1) {
-        this.contraseña1 = contraseña1;
-    }
-    
     public void mensaje (){
         
         FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(correo1));

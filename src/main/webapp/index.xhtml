@@ -18,12 +18,11 @@
                 <h:commandButton style="color: black; background-color: red" value="Sign In" action="#{Registro.mensaje()}"/></pre>
                 <br/><br/><br/>
                 <pre><font face="arial" size="6px" color="#FFFF00">                                    SING UP</font>
-                <IMG align="right" SRC="http://o2.metroflog.com/834/64/1/877164834_EMCPCKFOBJUMUWG.jpg" WIDTH="510" HEIGHT="520" 
+                <IMG position="fixed" align="right" SRC="http://sp7.fotolog.com/photo/39/36/100/andres_flks/1265584536725_f.jpg" WIDTH="510" HEIGHT="520" 
                                    BORDER="2" VSPACE="3" HSPACE="3" ALT="Obra de K. Haring"></IMG>
                 <br/><br/><br/><h:outputLabel style="color: green"  for="correo2" value="Correo                     "/>
                 <h:inputText style="background-color: green" id="correo2" value="#{Registro.correo2}"/>
-                <br/>
-                <br/>
+                <br/><br/>
                 <h:outputLabel style="color: yellow" for="contraseña2" value="Contraseña                 "/>
                 <h:inputSecret style="background-color: yellow" id="contraseña2" value="#{Registro.contraseña2}"/>
                 <br/><br/>
@@ -39,9 +38,15 @@
                 <h:outputLabel style="color: red" for="año" value="Año de carrera             "/>
                 <h:inputSecret style="background-color: red" id="año" value="#{Registro.año}"/>
                 <br/><br/>
-                <h:outputLabel style="color: green" for="telefono" value="Telefono                   "/>
-                <h:inputSecret style="background-color: green" id="telefono" value="#{Registro.telefono}"/>
-                <br/><br/><h:outputLabel style="color: yellow" for="carrera" value="carrera                    "/><select style="background-color: yellow">
+                <h:outputLabel style="color: green" for="edad" value="edad                       "/>
+                <h:inputText style=" background-color: green" id="edad" value="#{Registro.edad}"/>
+                <br/><br/>
+                <h:outputLabel style="color: yellow" for="direccion" value="Direccion                  "/>
+                <h:inputSecret style="background-color: yellow" id="direccion" value="#{Registro.direccion}"/>
+                <br/><br/>
+                <h:outputLabel style="color: red" for="telefono" value="Telefono                   "/>
+                <h:inputSecret style="background-color: red" id="telefono" value="#{Registro.telefono}"/>
+                <br/><br/><h:outputLabel style="color: green" for="carrera" value="carrera                    "/><select style="background-color: yellow">
                     <option style="background-color: red" value="carrera">Administración de Empresas</option>
                     <option style="background-color: green" value="carrera">Administración de Tecnologías de Información</option>
                     <option style="background-color: yellow" value="carrera">Educación Técnica</option>
@@ -64,6 +69,7 @@
                     <option style="background-color: green" value="carrera">Ingeniería Mecatrónica</option>
                 </select>
                 </pre>
+                <h:commandButton action="segundoxhtml.xhtml" value="lol"/>
                 
             </h:messages>
         </h:form>
