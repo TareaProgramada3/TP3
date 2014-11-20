@@ -7,9 +7,11 @@ import javax.inject.Named;
 
 @Named (value="Registro")
 @RequestScoped
+
 public class Registro {
 
     String edad;
+    String carrera;
     String direccion;
     String año;
     String telefono;
@@ -21,6 +23,14 @@ public class Registro {
     String contraseña2;
     String contraseña3;
     String imagen;
+
+    public String getCarrera() {
+        return carrera;
+    }
+
+    public void setCarrera(String carrera) {
+        this.carrera = carrera;
+    }
 
     public String getImagen() {
         return imagen;
@@ -117,10 +127,10 @@ public class Registro {
     public void setContraseña3(String contraseña3) {
         this.contraseña3 = contraseña3;
     }
-
+    
     public void mensaje (){
         
-        FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(correo1));
+        FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(this.imagen));
     }
     
 }
