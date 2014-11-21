@@ -12,6 +12,7 @@ public class baseDeDatos
     public FileWriter escritorDeArchivos;
     public PrintWriter impresorDeArchibos;
     String [] generica = new String [10];
+    Grafos grafo;
      
     public baseDeDatos()
     {
@@ -20,6 +21,7 @@ public class baseDeDatos
         this.lectorDeFichero = null;
         this.escritorDeArchivos = null;
         this.impresorDeArchibos = null;
+        grafo = new Grafos();
     }
     
     public void leerFicherosClientes() throws FileNotFoundException, IOException
