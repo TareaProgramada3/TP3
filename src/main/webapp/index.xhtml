@@ -12,6 +12,15 @@
                 <h:graphicImage value="#{Registro.imagen}"/>
                 <pre><font face="arial" size="12px" color="#FFFF00">RastaBook        </font>
                 <h:outputLabel style="color: red" for="correo1" value="Correo "/>
+                <h:outputLabel style="color: black" for="correo1" value="kdkslkcslkckjksjkdjcdkjcdjhjhcjshjchdj "/>
+                
+                    <form method="post" action="accion.php" enctype="multipart/form-data">
+
+                    <input name="imagen" type="file" />
+                    </form>
+                
+                 
+                
                 <h:inputText style="background-color: red" id="correo1" value="#{Registro.correo1}"/>
                 <h:outputLabel style="color: green" for="contraseña1" value=" contraseña "/>
                 <h:inputSecret style="background-color: green" id="contraseña1" value="#{Registro.contraseña1}"/>
